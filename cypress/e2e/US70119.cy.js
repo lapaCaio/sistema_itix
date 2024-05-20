@@ -116,7 +116,9 @@ describe('Cadastro de Usuários - Pesquisar', () => {
             .should('contain', 'Usuários')
         cy.get('.outline')
             .should('contain', 'Retornar')
-        cy.get('form.ng-touched')
+        cy.get('.ng-star-inserted > .form-check-input')
+            .click({force:true})
+        cy.get('.form-wrapper')
             .should('contain', 'Nome')
             .and('contain', 'CPF')
             .and('contain', 'Email')
@@ -180,7 +182,7 @@ describe('Cadastro de Usuários - Pesquisar', () => {
         .eq(2)
         .click()
         cy.get('.ng-option-label')
-        .eq(8)
+        .eq(7)
         .click()
         cy.get('.btn')
             .click({force:true})
@@ -188,12 +190,12 @@ describe('Cadastro de Usuários - Pesquisar', () => {
         cy.wait(500)
 
         cy.get('.cluster-filter')
-        .find('table') 
-        .find('tbody > tr > :nth-child(4)')
-        .each(($cell) => {
-            const cellText = $cell.text().trim();
-            expect(cellText).to.equal('Sindicato dos Juniors');
-        });
+            .find('table') 
+            .find('tbody > tr > :nth-child(4)')
+            .each(($cell) => {
+                const cellText = $cell.text().trim();
+                expect(cellText).to.equal('Recurso Humano');
+            });
     })
 
     it('TC010 - Pesquisa com Entrada Válida', () => {

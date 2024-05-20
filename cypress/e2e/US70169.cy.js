@@ -2,11 +2,21 @@ const { exit } = require("process")
 
 const caracteres50 = "Lorem ipsum dolor sit amet, consectetur adipiscin."
 const caracteres200 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra nisl et egestas pulvinar. Cras ultrices, tellus id lacinia vehicula, libero leo sollicitudin turpis, vitae ornare lorem nulla in."
-const caracteres100 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra nisl et egestas pulvinar. Cr."
+const caracteres100 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra nisl et egestas pulvinar. Cra"
 
 const frase = "The quick brown fox jumps over the lazy dog and tragically dies."
 
 /// <reference types="Cypress" />
+
+function getTodayDate(days = 0) {
+  const today = new Date();
+  today.setDate(today.getDate() + days);
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = today.toLocaleDateString('pt-BR', options);
+
+  return formattedDate;
+}
 
 describe('Template de Email - Pesquisar', () => {
   
@@ -14,7 +24,7 @@ describe('Template de Email - Pesquisar', () => {
     cy.visit('/')
     cy.get('.ci-settings')
       .click()
-    cy.get('.sub-menu > :nth-child(14)')
+    cy.get('.sub-menu > :nth-child(13)')
       .click()
   })
 
@@ -49,7 +59,7 @@ describe('Template de Email - Pesquisar', () => {
     cy.get('.secondary')
       .should('contain', "Adicionar")
     cy.get('.row > .actions > .primary')
-      .should('contain', "Filtrar")
+      .should('contain', "Pesquisar")
 
     //Lista de Registros
     cy.contarLinhasTabela('.cluster-filter > :nth-child(2)')
@@ -62,7 +72,8 @@ describe('Template de Email - Pesquisar', () => {
 
   it('TC002 - Pesquisar Nome (+100 Caracteres)', () => {
     cy.escreveEm('.grow > .ng-untouched', '.row > .actions > .primary', caracteres200)
-    cy.get('.grow > .ng-valid').should('have.value', "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra nisl et egestas pulvinar. Cra")
+    cy.get('.grow > .ng-valid')
+      .should('have.value', caracteres100)
   })
 
   it('TC003 - Pesquisar Nome Inválido', () => {
@@ -147,16 +158,6 @@ describe('Template de Email - Pesquisar', () => {
       });
   })
 
-  function getTodayDate(days = 0) {
-    const today = new Date();
-    today.setDate(today.getDate() + days);
-  
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const formattedDate = today.toLocaleDateString('pt-BR', options);
-  
-    return formattedDate;
-  }
-
   it('TC008 - Pesquisar por Filtro de Data', () => {
 
     const dataCampo1 = getTodayDate(-18)
@@ -176,7 +177,6 @@ describe('Template de Email - Pesquisar', () => {
     cy.get('[aria-label="'+ dataCampo2 +'"] > .btn-light')
       .click({force: true})
 
-
   })
 
   it('TC009 - Limpar Filtro "Status" Ativo Pesquisa', () => {
@@ -185,9 +185,9 @@ describe('Template de Email - Pesquisar', () => {
       .click()
     
     cy.get('.ng-option-label')
-      .eq(1)
+      .eq(0)
       .should('contain', "Ativo")
-      .click()
+      .click({force:true})
     
     cy.get('.list-item-multiselect > :nth-child(1)')
       .should('contain', 'Ativo')

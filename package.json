@@ -4,5 +4,6 @@
     "scripts": {
       "cypress:run": "npx cypress run --reporter junit --reporter-options mochaFile=cypress/reports/junit/test-results-[hash].xml,toConsole=true",
       "cy:open": "npx cypress open --config chromeWebSecurity=false"
-    }
+    },
+    "type": "module"
   }

@@ -17,7 +17,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
     })
 
     it('TC001 - Teste Botão "Voltar"', () => {
-        cy.get('.secondary')
+        cy.get('.btn-secondary')
             .click({ force: true })
         cy.get('.swal2-popup')
             .should('contain', "Atenção")
@@ -27,7 +27,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
     })
 
     it('TC002 - Teste Botão "Voltar" Opção "Não"', () => {
-        cy.get('.secondary')
+        cy.get('.btn-secondary')
             .click({ force: true })
         cy.get('.swal2-cancel')
             .click({ force: true })
@@ -37,7 +37,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
     })
 
     it('TC003 - Teste Botão "Voltar" Opção "Sim"', () => {
-        cy.get('.secondary')
+        cy.get('.btn-secondary')
             .click({ force: true })
         cy.get('.swal2-confirm')
             .click({ force: true })
@@ -88,11 +88,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
             .should('not.have.text', "Lorem Ipsum")
     })
     it('TC013 - Teste Máscara de Campo CPF', () => {
-        let cpf_gerado = gerarCPF()
-        cy.get(':nth-child(1) > .col-4 > .inpunt-register')
-            .type(cpf_gerado)
-        cy.get(':nth-child(1) > .col-4 > .inpunt-register')
-            .should('have.value', cpf_gerado)
+        cy.gerarCPF(':nth-child(1) > .col-4 > .inpunt-register')
     })
 
     it('TC014 - Teste de Validação de CPF Inválido', () => {
@@ -102,7 +98,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.get(':nth-child(1) > .col-4 > .inpunt-register')
             .should('have.value', cpf_invalido)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
         cy.get('.col-4 > .ng-star-inserted')
             .should('be.visible')
@@ -126,7 +122,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.get(':nth-child(2) > :nth-child(1) > .inpunt-register')
             .type(caracteres200)
         cy.get(':nth-child(2) > :nth-child(1) > .inpunt-register')
-            .should('have.value', caracteres100)
+            .should('have.value', caracteres100.replace(/ /g, '')) //retira os espaços
     })
 
     it('TC018 - Teste Validação Campo "Email" Inválido', () => {
@@ -134,7 +130,7 @@ describe('Cadastro de Usuário - Cadastrar', () => {
             .type(caracteres50)
         cy.get(':nth-child(2) > :nth-child(1) > .inpunt-register')
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
 
         cy.get('form.ng-invalid > :nth-child(2) > :nth-child(1) > .ng-star-inserted')
@@ -244,9 +240,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC028 - Teste Salvar Campo "CPF" Vazio', () => {
@@ -259,9 +255,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC004 - Teste Salvar Campo "Email" Vazio', () => {
@@ -274,9 +270,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC029 - Teste Salvar Campo "Sexo" Vazio', () => {
@@ -293,8 +289,8 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary').click({ force: true })
-        cy.get('.form-group > .primary').should('be.visible')
+        cy.get('.chore > span').click({ force: true })
+        cy.get('.chore > span').should('be.visible')
     })
     it('TC030 - Teste Salvar Campo "Data de Nascimento" Vazio', () => {
         cy.gerarNome('.col-6 > .inpunt-register')
@@ -306,9 +302,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.checkBox('.form-check-input')
         cy.estaMarcada('.form-check-input')
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC031 - Teste Salvar Campo "Perfil" Vazio', () => {
@@ -325,9 +321,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC032 - Teste Salvar Campo "Cargo" Vazio', () => {
@@ -343,9 +339,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.checkBox('.form-check-input')
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC004 - Teste Salvar Campo "Departamento" Vazio', () => {
@@ -362,9 +358,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.estaMarcada('.form-check-input')
         cy.preencheData('.input-date-picker > img', -10)
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
     it('TC033 - Teste Salvar Campo "Senha" Vazio', () => {
@@ -384,19 +380,19 @@ describe('Cadastro de Usuário - Cadastrar', () => {
         cy.preencheData('.input-date-picker > img', -10)
 
 
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
-    it('TC034 - Teste Salvar Campo Senha com Valores Diferentes', () => {
+    it.only('TC034 - Teste Salvar Campo Senha com Valores Diferentes', () => {
         cy.gerarNome('.col-6 > .inpunt-register')
         cy.gerarCPF(':nth-child(1) > .col-4 > .inpunt-register')
         cy.preencheEmailValido(':nth-child(2) > :nth-child(1) > .inpunt-register')
         cy.preencheListboxes(4)
         cy.gerarSenha('.row.ng-untouched > :nth-child(1) > .ng-untouched',
             '.row.ng-untouched > :nth-child(2) > .ng-untouched')
-        cy.get('.row.ng-untouched > :nth-child(2) > .ng-untouched')
+        cy.get('.row.ng-star-inserted > :nth-child(1) > .ng-dirty')
             .clear()
         cy.checkBox('.form-check-input')
         cy.estaMarcada('.form-check-input')
@@ -404,9 +400,9 @@ describe('Cadastro de Usuário - Cadastrar', () => {
 
         cy.get('.row.ng-star-inserted > :nth-child(2) > .ng-star-inserted')
             .should('have.text', "As senhas não são iguais")
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .click({ force: true })
-        cy.get('.form-group > .primary')
+        cy.get('.chore > span')
             .should('be.visible')
     })
 

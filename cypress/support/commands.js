@@ -25,6 +25,21 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 // No arquivo de comandos do Cypress (cypress/support/commands.js)
 
+function gerarCodigoAleatorio() {
+  const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let codigo = '';
+
+  for (let i = 0; i < 8; i++) {
+      const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+      codigo += caracteres.charAt(indiceAleatorio);
+  }
+
+  return `TC Cod[${codigo}]`;
+}
+
+const codigoFormatado = gerarCodigoAleatorio();
+console.log(codigoFormatado);
+
 function getTodayDate(days = 0) {
   const today = new Date();
   today.setDate(today.getDate() + days);
@@ -290,6 +305,11 @@ Cypress.Commands.add('preencheData', (campo_data, dias) => {
     .click()
   cy.get('[aria-label="'+ getTodayDate(dias) +'"] > .btn-light')
     .click({force:true})
+})
+
+Cypress.Commands.add('geraCodigoEm', (campo) => {
+  cy.get(campo)
+    .type(gerarCodigoAleatorio())
 })
 
 
