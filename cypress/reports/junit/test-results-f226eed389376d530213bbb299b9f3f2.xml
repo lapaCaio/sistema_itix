@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="21.959" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:11:44" tests="0" file="cypress\e2e\US70169.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Template de Email - Pesquisar" timestamp="2024-05-21T12:11:44" tests="13" time="21.956" failures="0">
+    <testcase name="Template de Email - Pesquisar TC001 - Teste Front" time="2.266" classname="TC001 - Teste Front">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC002 - Pesquisar Nome (+100 Caracteres)" time="3.940" classname="TC002 - Pesquisar Nome (+100 Caracteres)">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC003 - Pesquisar Nome Inválido" time="1.200" classname="TC003 - Pesquisar Nome Inválido">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC004 - Pesquisar por Filtro &quot;Vinculado a fase de&quot;" time="0.883" classname="TC004 - Pesquisar por Filtro &quot;Vinculado a fase de&quot;">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC005 - Pesquisar por Filtro &quot;Criado por&quot;" time="1.277" classname="TC005 - Pesquisar por Filtro &quot;Criado por&quot;">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC006 - Pesquisar por Filtro &quot;Status&quot; Ativo" time="2.046" classname="TC006 - Pesquisar por Filtro &quot;Status&quot; Ativo">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC007 - Pesquisar por Filtro &quot;Status&quot; Inativo" time="2.374" classname="TC007 - Pesquisar por Filtro &quot;Status&quot; Inativo">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC008 - Pesquisar por Filtro de Data" time="2.271" classname="TC008 - Pesquisar por Filtro de Data">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC009 - Limpar Filtro &quot;Status&quot; Ativo Pesquisa" time="1.070" classname="TC009 - Limpar Filtro &quot;Status&quot; Ativo Pesquisa">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC010 - Limpar Filtro &quot;Status&quot; Inativo Pesquisa" time="0.964" classname="TC010 - Limpar Filtro &quot;Status&quot; Inativo Pesquisa">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC012 - Limpar Pesquisa por Filtro &quot;Criado por&quot;" time="1.016" classname="TC012 - Limpar Pesquisa por Filtro &quot;Criado por&quot;">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC013 - Botão Adicionar Template" time="1.196" classname="TC013 - Botão Adicionar Template">
+    </testcase>
+    <testcase name="Template de Email - Pesquisar TC014 - Botão Exportar Template" time="0.805" classname="TC014 - Botão Exportar Template">
+    </testcase>
+  </testsuite>
+</testsuites>

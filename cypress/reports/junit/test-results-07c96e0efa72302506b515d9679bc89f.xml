@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.603" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:39:36" tests="0" file="cypress\e2e\US60464.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de Usuário - Cadastrar" timestamp="2024-05-21T12:39:36" tests="1" time="6.598" failures="0">
+    <testcase name="Cadastro de Usuário - Cadastrar TC035 - Teste Salvar Campos Completos e Válidos" time="6.511" classname="TC035 - Teste Salvar Campos Completos e Válidos">
+    </testcase>
+  </testsuite>
+</testsuites>

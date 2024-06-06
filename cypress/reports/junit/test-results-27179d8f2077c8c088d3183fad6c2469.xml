@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="87.925" tests="34" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:45:06" tests="0" file="cypress\e2e\US60464.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de Usuário - Cadastrar" timestamp="2024-05-21T12:45:06" tests="34" time="87.921" failures="1">
+    <testcase name="Cadastro de Usuário - Cadastrar TC001 - Teste Botão &quot;Voltar&quot;" time="2.534" classname="TC001 - Teste Botão &quot;Voltar&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC002 - Teste Botão &quot;Voltar&quot; Opção &quot;Não&quot;" time="1.431" classname="TC002 - Teste Botão &quot;Voltar&quot; Opção &quot;Não&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC003 - Teste Botão &quot;Voltar&quot; Opção &quot;Sim&quot;" time="1.316" classname="TC003 - Teste Botão &quot;Voltar&quot; Opção &quot;Sim&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Quantidade de Caracteres Campo &quot;Nome&quot;" time="3.952" classname="TC004 - Teste Quantidade de Caracteres Campo &quot;Nome&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC005 - Teste Campo Obrigatório Campo &quot;Nome&quot;" time="1.580" classname="TC005 - Teste Campo Obrigatório Campo &quot;Nome&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC010 - Teste Quantidade de Caracteres Campo CPF" time="1.516" classname="TC010 - Teste Quantidade de Caracteres Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC011 - Teste Campo Obrigatório Campo &quot;CPF&quot;" time="1.284" classname="TC011 - Teste Campo Obrigatório Campo &quot;CPF&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC012 - Teste Entrada de Letras Campo CPF" time="1.432" classname="TC012 - Teste Entrada de Letras Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC013 - Teste Máscara de Campo CPF" time="1.498" classname="TC013 - Teste Máscara de Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC014 - Teste de Validação de CPF Inválido" time="1.854" classname="TC014 - Teste de Validação de CPF Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC015 - Teste Alfanumérico Campo &quot;Email&quot;" time="1.509" classname="TC015 - Teste Alfanumérico Campo &quot;Email&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC016 - Teste Campo Obrigatório Campo &quot;Email&quot;" time="1.401" classname="TC016 - Teste Campo Obrigatório Campo &quot;Email&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC017 - Teste Quantidade de Caracteres Campo &quot;Email&quot;" time="0.000" classname="TC017 - Teste Quantidade de Caracteres Campo &quot;Email&quot;">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;input.inpunt-register.ng-untouched.ng-invalid.ng-dirty&gt;&apos; to have value &apos;Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Cra&apos;, but the value was &apos;Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Crasultrices,tell&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<input.inpunt-register.ng-untouched.ng-invalid.ng-dirty>' to have value 'Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Cra', but the value was 'Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Crasultrices,tell'
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US60464.cy.js:125:13)]]></failure>
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC018 - Teste Validação Campo &quot;Email&quot; Inválido" time="2.212" classname="TC018 - Teste Validação Campo &quot;Email&quot; Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC019 - Teste Campo &quot;Sexo&quot; Masculino" time="1.310" classname="TC019 - Teste Campo &quot;Sexo&quot; Masculino">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC020 - Teste Campo &quot;Sexo&quot; Feminino" time="1.282" classname="TC020 - Teste Campo &quot;Sexo&quot; Feminino">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC021 - Teste Campo Obrigatório Campo &quot;Sexo&quot;" time="1.311" classname="TC021 - Teste Campo Obrigatório Campo &quot;Sexo&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC022 - Teste Campo Obrigatório Campo &quot;Perfil&quot;" time="1.363" classname="TC022 - Teste Campo Obrigatório Campo &quot;Perfil&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC023 - Teste Campo Obrigatório Campo &quot;Cargo&quot;" time="1.345" classname="TC023 - Teste Campo Obrigatório Campo &quot;Cargo&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC024 - Teste Campo Obrigatório Campo &quot;Departamento&quot;" time="1.303" classname="TC024 - Teste Campo Obrigatório Campo &quot;Departamento&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC025 - Teste Campo Obrigatório Campo &quot;Senha&quot;" time="1.311" classname="TC025 - Teste Campo Obrigatório Campo &quot;Senha&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC026 - Teste Campo Obrigatório Campo &quot;Confirmar senha&quot;" time="1.296" classname="TC026 - Teste Campo Obrigatório Campo &quot;Confirmar senha&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC027 - Teste de Data Futura Campo Data" time="1.459" classname="TC027 - Teste de Data Futura Campo Data">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC027 - Teste Salvar Campo &quot;Nome&quot; Vazio" time="3.674" classname="TC027 - Teste Salvar Campo &quot;Nome&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC028 - Teste Salvar Campo &quot;CPF&quot; Vazio" time="3.402" classname="TC028 - Teste Salvar Campo &quot;CPF&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Salvar Campo &quot;Email&quot; Vazio" time="3.288" classname="TC004 - Teste Salvar Campo &quot;Email&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC029 - Teste Salvar Campo &quot;Sexo&quot; Vazio" time="3.808" classname="TC029 - Teste Salvar Campo &quot;Sexo&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC030 - Teste Salvar Campo &quot;Data de Nascimento&quot; Vazio" time="3.692" classname="TC030 - Teste Salvar Campo &quot;Data de Nascimento&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC031 - Teste Salvar Campo &quot;Perfil&quot; Vazio" time="4.006" classname="TC031 - Teste Salvar Campo &quot;Perfil&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC032 - Teste Salvar Campo &quot;Cargo&quot; Vazio" time="3.813" classname="TC032 - Teste Salvar Campo &quot;Cargo&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Salvar Campo &quot;Departamento&quot; Vazio" time="3.920" classname="TC004 - Teste Salvar Campo &quot;Departamento&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC033 - Teste Salvar Campo &quot;Senha&quot; Vazio" time="4.078" classname="TC033 - Teste Salvar Campo &quot;Senha&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC034 - Teste Salvar Campo Senha com Valores Diferentes" time="3.861" classname="TC034 - Teste Salvar Campo Senha com Valores Diferentes">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC035 - Teste Salvar Campos Completos e Válidos" time="5.134" classname="TC035 - Teste Salvar Campos Completos e Válidos">
+    </testcase>
+  </testsuite>
+</testsuites>

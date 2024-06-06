@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="38.223" tests="15" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:10:57" tests="0" file="cypress\e2e\US70119.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de Usuários - Pesquisar" timestamp="2024-05-21T12:10:57" tests="15" time="38.219" failures="1">
+    <testcase name="Cadastro de Usuários - Pesquisar TC001 - Verificar Página" time="2.344" classname="TC001 - Verificar Página">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC002 - Botão Adicionar Usuário" time="0.990" classname="TC002 - Botão Adicionar Usuário">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC002 - Campo &quot;Nome de Usuário&quot; Alfanumérico" time="1.077" classname="TC002 - Campo &quot;Nome de Usuário&quot; Alfanumérico">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC003 - Campo &quot;Nome de Usuário&quot; &gt; 100 Caracteres" time="3.453" classname="TC003 - Campo &quot;Nome de Usuário&quot; &gt; 100 Caracteres">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC004 - Campo &quot;Nome de Usuário&quot; Inválido" time="2.494" classname="TC004 - Campo &quot;Nome de Usuário&quot; Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC005 - Campos da Lista de Usuários" time="1.294" classname="TC005 - Campos da Lista de Usuários">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC006 - Limpar Filtros" time="5.409" classname="TC006 - Limpar Filtros">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC007 - Tela de Visualização/Edição" time="1.442" classname="TC007 - Tela de Visualização/Edição">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC008 - Filtro &quot;Perfil&quot;" time="1.452" classname="TC008 - Filtro &quot;Perfil&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC009 - Filtro &quot;Cargo&quot;" time="0.000" classname="TC009 - Filtro &quot;Cargo&quot;">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `table`, but never found it. Queried from:
+
+              &gt; cy.get(.cluster-filter)" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `table`, but never found it. Queried from:
+
+              > cy.get(.cluster-filter)
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70119.cy.js:172:9)]]></failure>
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC009 - Filtro &quot;Departamento&quot;" time="2.228" classname="TC009 - Filtro &quot;Departamento&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC010 - Pesquisa com Entrada Válida" time="1.664" classname="TC010 - Pesquisa com Entrada Válida">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC011 - Pesquisa com Entrada Vazia" time="1.595" classname="TC011 - Pesquisa com Entrada Vazia">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC012 - Pesquisa com Entrada Inválida" time="1.683" classname="TC012 - Pesquisa com Entrada Inválida">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC010 - Teste Campo &quot;Pesquisa&quot; Quantidade de Caracteres" time="4.057" classname="TC010 - Teste Campo &quot;Pesquisa&quot; Quantidade de Caracteres">
+    </testcase>
+  </testsuite>
+</testsuites>

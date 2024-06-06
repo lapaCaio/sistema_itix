@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "scripts": {
       "cypress:run": "npx cypress run --reporter junit --reporter-options mochaFile=cypress/reports/junit/test-results-[hash].xml,toConsole=true",
-      "cy:open": "npx cypress open --config chromeWebSecurity=false"
+      "cy:open": "npx cypress open --config chromeWebSecurity=false",
+      "cy:record": "npx cypress run --record --key fefb790f-d4bb-420e-99f9-b057a7503312"
     },
     "type": "module"
   }

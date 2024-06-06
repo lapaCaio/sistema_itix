@@ -2,6 +2,7 @@ import { defineConfig } from "cypress"
 
 
 export default defineConfig({
+  projectId: "hf1asv",
   video: true,
   e2e: {
     setupNodeEvents(on, config) {

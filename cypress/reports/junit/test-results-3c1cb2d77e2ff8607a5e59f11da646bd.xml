@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="51.438" tests="17" failures="4">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:47:56" tests="0" file="cypress\e2e\US70228.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Senioridade - Pesquisar e Editar" timestamp="2024-05-21T12:47:56" tests="17" time="51.434" failures="4">
+    <testcase name="Senioridade - Pesquisar e Editar TC001 - Teste tela adicionar" time="1.672" classname="TC001 - Teste tela adicionar">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC002 - Teste Filtro Senioridade (Campo Alfanumérico)" time="2.191" classname="TC002 - Teste Filtro Senioridade (Campo Alfanumérico)">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC003 - Teste Filtro Senioridade (Quantidade de Caracteres)" time="2.146" classname="TC003 - Teste Filtro Senioridade (Quantidade de Caracteres)">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC004 - Teste Filtro Pesquisa (Correspondência de Pesquisa)" time="2.198" classname="TC004 - Teste Filtro Pesquisa (Correspondência de Pesquisa)">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC005 - Teste Limpar Filtro Senioridade" time="2.961" classname="TC005 - Teste Limpar Filtro Senioridade">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC006 - Tela Editar Senioridade" time="1.461" classname="TC006 - Tela Editar Senioridade">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC007 - Teste Editar Campo Alfanumérico com 50 Caracteres" time="1.705" classname="TC007 - Teste Editar Campo Alfanumérico com 50 Caracteres">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC008 - Teste Pop-Up de Erro ao Editar" time="2.286" classname="TC008 - Teste Pop-Up de Erro ao Editar">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC009 - Teste Pop-Up de Confirmação ao Editar" time="0.000" classname="TC009 - Teste Pop-Up de Confirmação ao Editar">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;div.swal2-popup.swal2-modal.swal2-show&gt;&apos; to contain &apos;Registro alterado com sucesso.&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<div.swal2-popup.swal2-modal.swal2-show>' to contain 'Registro alterado com sucesso.'
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70228.cy.js:121:9)]]></failure>
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC009 - Editar Senioridade Ativa Vinculada a Usuário" time="0.543" classname="TC009 - Editar Senioridade Ativa Vinculada a Usuário">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC010 - Editar Senioridade Ativa Não Vinculada a Usuário" time="2.752" classname="TC010 - Editar Senioridade Ativa Não Vinculada a Usuário">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC011 &amp; TC012 - Editar Botão Toggle Ativo/Inativo" time="0.000" classname="TC011 &amp; TC012 - Editar Botão Toggle Ativo/Inativo">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;div#swal2-html-container.swal2-html-container&gt;&apos; to contain &apos;Registro alterado com sucesso.&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<div#swal2-html-container.swal2-html-container>' to contain 'Registro alterado com sucesso.'
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70228.cy.js:161:9)]]></failure>
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC013 - Editar Botão Toggle Ativo/Inativo Mensagem de Erro" time="3.407" classname="TC013 - Editar Botão Toggle Ativo/Inativo Mensagem de Erro">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC014 - Botão Voltar de Edição de Senioridade" time="1.301" classname="TC014 - Botão Voltar de Edição de Senioridade">
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC015 - &quot;Sim&quot; na Tela de Confirmação de Voltar" time="0.000" classname="TC015 - &quot;Sim&quot; na Tela de Confirmação de Voltar">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.swal2-confirm`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.swal2-confirm`, but never found it.
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70228.cy.js:206:9)]]></failure>
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC016 - &quot;Não&quot; na Tela de Confirmação de Voltar" time="0.000" classname="TC016 - &quot;Não&quot; na Tela de Confirmação de Voltar">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.swal2-cancel`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.swal2-cancel`, but never found it.
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70228.cy.js:220:9)]]></failure>
+    </testcase>
+    <testcase name="Senioridade - Pesquisar e Editar TC017 - Editar Teste com Campo em Branco" time="1.303" classname="TC017 - Editar Teste com Campo em Branco">
+    </testcase>
+  </testsuite>
+</testsuites>

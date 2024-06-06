@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="89.550" tests="33" failures="2">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:09:16" tests="0" file="cypress\e2e\US60464.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de Usuário - Cadastrar" timestamp="2024-05-21T12:09:16" tests="33" time="89.546" failures="2">
+    <testcase name="Cadastro de Usuário - Cadastrar TC001 - Teste Botão &quot;Voltar&quot;" time="3.011" classname="TC001 - Teste Botão &quot;Voltar&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC002 - Teste Botão &quot;Voltar&quot; Opção &quot;Não&quot;" time="1.443" classname="TC002 - Teste Botão &quot;Voltar&quot; Opção &quot;Não&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC003 - Teste Botão &quot;Voltar&quot; Opção &quot;Sim&quot;" time="1.688" classname="TC003 - Teste Botão &quot;Voltar&quot; Opção &quot;Sim&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Quantidade de Caracteres Campo &quot;Nome&quot;" time="4.074" classname="TC004 - Teste Quantidade de Caracteres Campo &quot;Nome&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC005 - Teste Campo Obrigatório Campo &quot;Nome&quot;" time="1.551" classname="TC005 - Teste Campo Obrigatório Campo &quot;Nome&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC010 - Teste Quantidade de Caracteres Campo CPF" time="1.577" classname="TC010 - Teste Quantidade de Caracteres Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC011 - Teste Campo Obrigatório Campo &quot;CPF&quot;" time="1.467" classname="TC011 - Teste Campo Obrigatório Campo &quot;CPF&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC012 - Teste Entrada de Letras Campo CPF" time="1.739" classname="TC012 - Teste Entrada de Letras Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC013 - Teste Máscara de Campo CPF" time="1.561" classname="TC013 - Teste Máscara de Campo CPF">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC014 - Teste de Validação de CPF Inválido" time="1.951" classname="TC014 - Teste de Validação de CPF Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC015 - Teste Alfanumérico Campo &quot;Email&quot;" time="1.813" classname="TC015 - Teste Alfanumérico Campo &quot;Email&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC016 - Teste Campo Obrigatório Campo &quot;Email&quot;" time="1.351" classname="TC016 - Teste Campo Obrigatório Campo &quot;Email&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC017 - Teste Quantidade de Caracteres Campo &quot;Email&quot;" time="0.000" classname="TC017 - Teste Quantidade de Caracteres Campo &quot;Email&quot;">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;input.inpunt-register.ng-untouched.ng-invalid.ng-dirty&gt;&apos; to have value &apos;Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Cra&apos;, but the value was &apos;Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Crasultrices,tell&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<input.inpunt-register.ng-untouched.ng-invalid.ng-dirty>' to have value 'Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Cra', but the value was 'Loremipsumdolorsitamet,consecteturadipiscingelit.Etiamviverranisletegestaspulvinar.Crasultrices,tell'
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US60464.cy.js:125:13)]]></failure>
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC018 - Teste Validação Campo &quot;Email&quot; Inválido" time="2.215" classname="TC018 - Teste Validação Campo &quot;Email&quot; Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC019 - Teste Campo &quot;Sexo&quot; Masculino" time="1.326" classname="TC019 - Teste Campo &quot;Sexo&quot; Masculino">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC020 - Teste Campo &quot;Sexo&quot; Feminino" time="1.373" classname="TC020 - Teste Campo &quot;Sexo&quot; Feminino">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC021 - Teste Campo Obrigatório Campo &quot;Sexo&quot;" time="1.379" classname="TC021 - Teste Campo Obrigatório Campo &quot;Sexo&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC022 - Teste Campo Obrigatório Campo &quot;Perfil&quot;" time="1.554" classname="TC022 - Teste Campo Obrigatório Campo &quot;Perfil&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC023 - Teste Campo Obrigatório Campo &quot;Cargo&quot;" time="1.698" classname="TC023 - Teste Campo Obrigatório Campo &quot;Cargo&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC024 - Teste Campo Obrigatório Campo &quot;Departamento&quot;" time="1.870" classname="TC024 - Teste Campo Obrigatório Campo &quot;Departamento&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC025 - Teste Campo Obrigatório Campo &quot;Senha&quot;" time="1.328" classname="TC025 - Teste Campo Obrigatório Campo &quot;Senha&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC026 - Teste Campo Obrigatório Campo &quot;Confirmar senha&quot;" time="1.298" classname="TC026 - Teste Campo Obrigatório Campo &quot;Confirmar senha&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC027 - Teste de Data Futura Campo Data" time="1.392" classname="TC027 - Teste de Data Futura Campo Data">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC027 - Teste Salvar Campo &quot;Nome&quot; Vazio" time="3.482" classname="TC027 - Teste Salvar Campo &quot;Nome&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC028 - Teste Salvar Campo &quot;CPF&quot; Vazio" time="3.394" classname="TC028 - Teste Salvar Campo &quot;CPF&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Salvar Campo &quot;Email&quot; Vazio" time="3.393" classname="TC004 - Teste Salvar Campo &quot;Email&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC029 - Teste Salvar Campo &quot;Sexo&quot; Vazio" time="3.861" classname="TC029 - Teste Salvar Campo &quot;Sexo&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC030 - Teste Salvar Campo &quot;Data de Nascimento&quot; Vazio" time="4.194" classname="TC030 - Teste Salvar Campo &quot;Data de Nascimento&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC031 - Teste Salvar Campo &quot;Perfil&quot; Vazio" time="4.003" classname="TC031 - Teste Salvar Campo &quot;Perfil&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC032 - Teste Salvar Campo &quot;Cargo&quot; Vazio" time="3.831" classname="TC032 - Teste Salvar Campo &quot;Cargo&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC004 - Teste Salvar Campo &quot;Departamento&quot; Vazio" time="4.031" classname="TC004 - Teste Salvar Campo &quot;Departamento&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC033 - Teste Salvar Campo &quot;Senha&quot; Vazio" time="3.949" classname="TC033 - Teste Salvar Campo &quot;Senha&quot; Vazio">
+    </testcase>
+    <testcase name="Cadastro de Usuário - Cadastrar TC034 - Teste Salvar Campo Senha com Valores Diferentes" time="0.000" classname="TC034 - Teste Salvar Campo Senha com Valores Diferentes">
+      <failure message="Timed out retrying after 4050ms: `cy.click()` failed because this element:
+
+`&lt;span class=&quot;ng-option-label ng-star-inserted&quot;&gt;Lorem i...&lt;/span&gt;`
+
+is being covered by another element:
+
+`&lt;form _ngcontent-xus-c93=&quot;&quot; novalidate=&quot;&quot; class=&quot;ng-invalid ng-dirty ng-touched&quot;&gt;...&lt;/form&gt;`
+
+Fix this problem, or use {force: true} to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with" type="CypressError"><![CDATA[CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:
+
+`<span class="ng-option-label ng-star-inserted">Lorem i...</span>`
+
+is being covered by another element:
+
+`<form _ngcontent-xus-c93="" novalidate="" class="ng-invalid ng-dirty ng-touched">...</form>`
+
+Fix this problem, or use {force: true} to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+    at ensureIsDescendent (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112417:68)
+    at ensureDescendents (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112468:5)
+    at ensureDescendentsAndScroll (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112474:14)
+    at ensureElIsNotCovered (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112605:5)
+    at runAllChecks (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112804:52)
+    at retryActionability (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:112841:16)
+    at tryCatcher (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise.attempt.Promise.try (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:4315:29)
+    at whenStable (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:144459:68)
+    at <unknown> (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:144400:14)
+    at tryCatcher (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1701:18)
+    at Promise._fulfill (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:1645:18)
+    at <unknown> (https://app.dev.recrutamento.itixti-lab.com.br/__cypress/runner/cypress_runner.js:5450:46)
+From Your Spec Code:
+    at Context.eval (webpack://multiplo-environments/./cypress/support/commands.js:249:30)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

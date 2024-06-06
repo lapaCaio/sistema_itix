@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="30.700" tests="15" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-05-21T12:46:46" tests="0" file="cypress\e2e\US70119.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Cadastro de Usuários - Pesquisar" timestamp="2024-05-21T12:46:46" tests="15" time="30.696" failures="1">
+    <testcase name="Cadastro de Usuários - Pesquisar TC001 - Verificar Página" time="2.214" classname="TC001 - Verificar Página">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC002 - Botão Adicionar Usuário" time="0.801" classname="TC002 - Botão Adicionar Usuário">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC002 - Campo &quot;Nome de Usuário&quot; Alfanumérico" time="1.018" classname="TC002 - Campo &quot;Nome de Usuário&quot; Alfanumérico">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC003 - Campo &quot;Nome de Usuário&quot; &gt; 100 Caracteres" time="3.098" classname="TC003 - Campo &quot;Nome de Usuário&quot; &gt; 100 Caracteres">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC004 - Campo &quot;Nome de Usuário&quot; Inválido" time="1.989" classname="TC004 - Campo &quot;Nome de Usuário&quot; Inválido">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC005 - Campos da Lista de Usuários" time="0.786" classname="TC005 - Campos da Lista de Usuários">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC006 - Limpar Filtros" time="5.206" classname="TC006 - Limpar Filtros">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC007 - Tela de Visualização/Edição" time="1.250" classname="TC007 - Tela de Visualização/Edição">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC008 - Filtro &quot;Perfil&quot;" time="1.676" classname="TC008 - Filtro &quot;Perfil&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC009 - Filtro &quot;Cargo&quot;" time="0.000" classname="TC009 - Filtro &quot;Cargo&quot;">
+      <failure message="expected &apos;Analista de Sistemas&apos; to equal &apos;Analista QA&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'Analista de Sistemas' to equal 'Analista QA'
+    at Context.eval (webpack://multiplo-environments/./cypress/e2e/US70119.cy.js:176:32)]]></failure>
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC009 - Filtro &quot;Departamento&quot;" time="1.478" classname="TC009 - Filtro &quot;Departamento&quot;">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC010 - Pesquisa com Entrada Válida" time="1.585" classname="TC010 - Pesquisa com Entrada Válida">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC011 - Pesquisa com Entrada Vazia" time="1.502" classname="TC011 - Pesquisa com Entrada Vazia">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC012 - Pesquisa com Entrada Inválida" time="1.547" classname="TC012 - Pesquisa com Entrada Inválida">
+    </testcase>
+    <testcase name="Cadastro de Usuários - Pesquisar TC010 - Teste Campo &quot;Pesquisa&quot; Quantidade de Caracteres" time="3.810" classname="TC010 - Teste Campo &quot;Pesquisa&quot; Quantidade de Caracteres">
+    </testcase>
+  </testsuite>
+</testsuites>
